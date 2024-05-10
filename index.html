@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.mobile.css">
+    <title>Início</title>
+  </head>
+  <body>
+    <div class="container-links" >
+      <section class="menu">
+        <div class="link-flex">
+         <div class="links">
+          <nav>
+            <ul>
+             <li><a href="#inicio">Início</a></li>
+             <li><a href="#projetos">Projetos</a></li>
+             <li><a href="#sobre-mim">Sobre mim</a></li>
+             <li><a href="#especialidades">Especialidades</a></li>
+             <li><a href="src/Curriculo_Janeiro_2024.pdf" download="curriculo">Baixar CV</a></li>
+             <li><a href="#formulario"><span>| Fale comigo |</span></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="btn-link">
+          <a href="#" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+      </section>
+    </div>
+      <header>
+          <i id="burguer" class="bi bi-list" onclick="clickMenu()"></i> 
+          <menu id="itens">
+            <ul>
+             <li><a href="#inicio">Início</a></li>
+             <li><a href="#projetos">Projetos</a></li>
+             <li><a href="#sobre-mim">Sobre mim</a></li>
+             <li><a href="#especialidades">Especialidades</a></li>
+             <li><a href="Curriculo_Janeiro_2024.pdf" download="curriculo">Baixar CV</a></li>
+             <li><a href="#formulario"><span>| Fale comigo |</span></a></li>
+            </ul>
+            <div class="btn-link-hamburguer">
+              <a href="#" target="_blank"><i class="bi bi-github"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </menu>
+      </header>
+      </div>
+      </section>
+    </div>
+  <div class="hidden">
+    <div id="inicio" class="titulo-flex">
+      <section class="container-titulo">
+        <div class="titulo">
+        <p id="saudacao">Oi, eu sou</p>
+        <h1>Jescklay Matos<span>.</span></h1>
+        <p id="sub-title">Desenvolvedor Front-end HTML | CSS | Javascript | SQL PL/SQL</p>
+        <div class="btn-linkedin">
+        <a href="https://www.linkedin.com/in/jescklay-mattos-58a1a71a8/recent-activity/all/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+    </section>
+    <section class="foto-perfil">
+      <img src="src/img/IMG_20240131_073443_257.jpg" alt="foto-perfil">
+    </section>
+    </div>
+  </div>
+</div>
+  <div class="hidden">
+     <section id="sobre-mim" class="container-sobre-mim">
+      <div class="foto-perfil">
+        <img src="src/img/IMG_20240131_073443_257.jpg" alt="foto-perfil">
+      </div>
+        <div class="container-texto">
+          <h1>OI SOU JESCKLAY MATOS.</h1><br>
+          <p id="paragrafo">Estudante Full 
+            Stack, Banco de Dados Oracle SQL e PL | SQL. Como um amante
+            da computação procuro cada vez mais se tornar um
+            profissional na área. Adoro desafios, são eles quem
+            me fazem crescer e acreditar no meu potencial. No
+            momento estou atuando como fre-lance, mais venho
+            buscando uma empresa que esteja precisando de um
+            profissional que venha fazer grandes mudanças
+            e some junto com ela. Meu intuito e atuar em
+            uma empresas que confie no meu potêncial para 
+            mostrar do que sou capaz e ajudar a desenvolver
+            um grande crescimento na mesma.</p>
+        </div>
+      </div>
+   </section>
+</div>
+<div class="hidden">
+   <section id="projetos" class="projetos">
+    <figure>
+      <div class="titulo">
+        <h1 id="titulo">DESENVOLVIDOS POR MIM!</h1>
+      </div>
+      <a href="https://fala-comigo-formulario-email.vercel.app/" target="_blank">Mensagem e email.</a>
+      <img src="src/img/Login.1.png" alt="formulario">
+      <button onclick="abrirProjetos()">Mostrar mais</button>
+      <div id="mostrar-projetos"><style>#mostrar-projetos{display: none;}</style>
+      <a href="https://formulario-jescklaymattos.vercel.app/" target="_blank">Login e senha.</a>
+      <img src="src/img/login.2.png" alt="formulario2">
+      <a href="https://superman-legacy.vercel.app/" target="_blank">Superman Legacy, pré-estréia.</a>
+      <img src="src/img/Supermam.legacy.png" alt="supermam.legacy">
+      <a href="https://menu-pesquisa-google.vercel.app/" target="_blank" >Tela de pesquisa.</a>
+      <img src="src/img/pesquisa.google.png" alt="pesquisa">
+      <a href="https://portal-de-vagas.vercel.app//" target="_blank" >Site de vagas. </a>         
+      <img src="src/img/vagas-de-emprego.png" alt="vagas">
+    </div>
+  </section>
+</div>
+  <div class="hidden">
+     <section id="especialidades" class="especialidades">
+      <div class="interface">
+        <h2 class="title">MINHAS <span>ESPECIALIDADES.</span></h2>
+        <div class="flex">
+        <div class="especialidades-container">
+            <div class="especialidades-box">
+              <i onclick="abrirHtml()" class="bi bi-filetype-html" ></i>
+              <h3>HTML</h3>           
+              <p id="html">A evolução com um toc de marcação. Uso essa ferramenta para estruturar uma página web no meu dia a dia... <style>.especialidades p{display:none;}</style></p>
+            </div>
+            <div class="btn-fechar">
+            <button onclick="esconderHtml()">Stop</button>
+            </div>
+            <div class="especialidades-box">
+              <div class="btn-fechar">
+              <i onclick="abrirCss()" class="bi bi-filetype-css"></i>
+              </div>
+              <h3>CSS</h3> 
+              <p id="css">A moda alén de um click. Utilizo esta ferramenta para estilizar toda a minha página...</p>      
+            </div>   
+            <div class="btn-fechar"> 
+            <button onclick="esconderCss()">Stop</button>  
+            </div> 
+            <div class="especialidades-box">
+              <div class="btn-fechar">
+              <i onclick="abrirJavascript()" class="bi bi-filetype-js"></i>
+              </div>
+              <h3>JavaScript</h3> 
+              <p id="javascript"> O coração do futuro. Uso esta ferramenta para dar vida ao meu site...</p>   
+            </div>
+            <div class="btn-fechar">
+            <button onclick="esconderJavascript()">Stop</button>
+            </div> 
+            <div class="especialidades-box"><i onclick="abrirSql()" class="bi bi-filetype-sql"></i>
+              <h3>PL/SQL</h3> 
+              <p id="sql">O toque para uma solução. Ferramenta usada para pegar qualquer informação em banco de dados.</p>     
+            </div>
+            <div class="btn-fechar">
+            <button onclick="esconderSql()">Stop</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+ </div>
+<div class="hidden">
+    <div id="formulario" class="container-formulario" >
+      <section class="formulario">
+        <form action="https://formsubmit.co/jescklaysoft@hotmail.com" method="POST" >
+          <h1>FALE <span>COMIGO!</span></h1>
+           <label for="message"></label>
+           <input type="text" name="name" required placeholder="Mensagem"/><br />
+           <label for="email"></label>
+           <input type="email" name="email" required placeholder="E-mail"/><br />
+           <input type="hidden" name="_next" value="http://127.0.0.7:5502/index.saudacao.html"/>
+           <input type="submit" id="btn-enviar" value="Enviar"  />
+        </form>
+      </section>
+    </div>
+</div>
+    <footer id="copyright" class="hidden">
+          <h1>&copy 2024 Jescklay Mattos</h1>
+    </footer><style>
+        footer h1{
+          font-size: 15px;
+          top: 45px;
+          padding: 15px;
+         }
+      </style>
+  <script src="script.js"></script>
+  </body>
+</html>
