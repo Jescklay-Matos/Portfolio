@@ -11,6 +11,34 @@
     display: none;
   }
 
+  svg path {
+    stroke-width: 40;
+    stroke-linecap: round;
+    stroke: #fff;
+    fill: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .top_bar,
+  .bottom_bar {
+    stroke-dasharray: 240px 910px;
+  }
+
+  .middle_bar {
+    stroke-dasharray: 240px 240px;
+  }
+
+  /* In cross form */
+  .open .top_bar,
+  .open .bottom_bar {
+    stroke-dashoffset: -650px;
+  }
+  
+  .open .middle_bar {
+    stroke-dasharray: 0px 220px;
+    stroke-dashoffset: -120px;
+  }
+
   section .links a:hover:before {
     width: 100%;
   }
@@ -135,12 +163,6 @@
     display: none;
   }
 
-  #btn-menu-hamburguer {
-    color: white;
-    font-size: 45px;
-    display: block;
-  }
-
   #itens {
     display: none;
   }
@@ -207,14 +229,10 @@
     margin: 15px;
   }
 
-  i#burguer:active {
-    color: rgba(247, 244, 244, 0.267);
-  }
-
   #burguer {
     color: white;
     display: flex;
-    margin-left: 85%;
+    margin-left: 75%;
   }
 
   #itens {
@@ -313,23 +331,6 @@
 
   section .container-texto h1 {
     font-size: 35px;
-  }
-
-  i#burguer {
-    padding: 5px;
-    font-size: 45px;
-    color: rgb(247, 244, 244);
-    margin-top: 25px;
-  }
-
-  i#burguer:active {
-    color: rgba(247, 244, 244, 0.267);
-  }
-
-  #burguer {
-    color: white;
-    display: flex;
-    justify-content: end;
   }
 
   section.especialidades {

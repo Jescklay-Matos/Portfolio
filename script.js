@@ -1,7 +1,11 @@
-function clickMenu() {
-  document.getElementById("burguer").classList.toggle("bi-x");
-  document.getElementById("burguer").classList.toggle("bi-list");
+const menu = document.querySelector("svg");
+menu.addEventListener("click", morph);
 
+function morph() {
+  menu.classList.toggle("open");
+}
+
+function abrirMenu() {
   if (itens.style.display == "block") {
     itens.style.display = "none";
   } else {
@@ -57,3 +61,5 @@ const myObserver = new IntersectionObserver((entries) => {
 
 const elements = document.querySelectorAll(".hidden");
 elements.forEach((Element) => myObserver.observe(Element));
+
+
