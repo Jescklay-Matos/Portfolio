@@ -62,4 +62,23 @@ const myObserver = new IntersectionObserver((entries) => {
 const elements = document.querySelectorAll(".hidden");
 elements.forEach((Element) => myObserver.observe(Element));
 
+const el = document.querySelector("#sobre");
+const sobre = "Jescklay Matos.";
+const interval = 200;
 
+function showText(el, text, interval) {
+  const char = sobre.split("").reverse();
+  const typer = setInterval(() => {
+    if (!char.length) {
+      return clearInterval(typer);
+    }
+
+    const next = char.pop();
+
+    el.innerHTML += next;
+  }, interval);
+}
+
+showText(el, sobre, interval);
+
+/*-----------------------------------*/
